@@ -1,2 +1,2 @@
 # REAL-MADRID-CF
-Created with CodeSandbox
+This is a Real Madrid Fan Website, It's interactive as you click. Enjoy!
