@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link the CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/fav.png" />
+    <title>Hala Madrid!</title>
+  </head>
+  <body>
+    <div class="top white center-content" id="title">
+      <img
+        src="images/madridtitle.png"
+        class="hover-effect"
+        onclick="clickTitle()"
+      />
+    </div>
+    <div class="bottom blue">
+      <div class="column1 orange">
+        <div class="box1 gold center-content" onclick="clickStadium()">
+          <p>STADIUM</p>
+        </div>
+        <div class="box1 gold center-content" onclick="clickTrophies()">
+          <p>TROPHIES</p>
+        </div>
+      </div>
+      <div class="middle blue center-content">
+        <img src="images/rma.png" id="logo" />
+      </div>
+      <div class="column2 orange">
+        <div class="box1 gold center-content" onclick="clickLegends()">
+          <p>MADRID'S TOP SCORER</p>
+        </div>
+        <div class="box1 gold center-content" onclick="clickHighlights()">
+          <p>HIGHLIGHTS</p>
+        </div>
+      </div>
+    </div>
+    <audio src="audio/anthem.m4a" id="sound"></audio>
+    <audio src="audio/UCL.mp3" id="champions"></audio>
+    <audio src="audio/siu.mp3" id="siu"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

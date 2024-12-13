@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+{// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 1000 
+
+.dm-sans-<uniquifier > 
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+p {
+  font-size: 1.88em;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  margin: 0;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/* this class specifies shape */
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.column1 {
+  height: 100%;
+  width: 25%;
+  display: block;
+}
+.column2 {
+  height: 100%;
+  width: 25%;
+  display: block;
+}
+.column3 {
+  height: 100%;
+  width: 25%;
+  display: block;
+}
+
+.top {
+  height: 35%;
+  width: 100%;
+}
+.bottom {
+  height: 65%;
+  width: 100%;
+  display: flex;
+}
+.middle {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+.box1 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+/* Basic styles for the titles */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+/* Apply hover effect to box1 */
+.box1 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.box1 p {
+  font-size: 20px;
+  font-weight: bold;
+  color: black; /* Default text color */
+  margin: 0;
+  transition: all 0.3s ease; /* Smooth transition for text properties */
+}
+
+/* Hover effect on the text only */
+.box1:hover p {
+  color: #C0C0C0; /* Changes text color on hover */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow effect to text */
+  transform: scale(1.1); /* Slightly increases text size on hover */
+}
+.hover-effect {
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transitions */
+}
+
+.hover-effect:hover {
+  transform: scale(1.1); /* Slightly enlarges the image */
+  filter: brightness(1.2); /* Makes the image brighter */
+}
+
+
+/* these classes specify color */
+.black {
+  background-color: #000000;
+}
+.pink {
+  background-color: #eb5674;
+}
+.gold {
+  background-color: #febe10;
+}
+.orange {
+  background-color: #ea6626;
+}
+.grey {
+  background-color: #d3d3d3;
+}
+.white {
+  background-color: #ffffff;
+}
+.dark-grey {
+  background-color: #a9a9a9;
+}
+.green {
+  background-color: #008d24;
+}
+.blue {
+  background-color: #00529f;
+}
+.purple {
+  background-color: #3a246d;
+}
+.red {
+  background-color: #ca1b22;
+}
+/* styles if the screen is 600px or less */
+@media only screen and (max-width: 600px) {
+  .column1 {
+    height: 15%;
+    width: 100%;
+    display: block;
+  }
+  .column2 {
+    height: 15%;
+    width: 100%;
+    display: block;
+  }
+  .top {
+    height: 35%;
+    width: 100%;
+    display: none;
+  }
+
+  .bottom {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  .middle {
+    height: 70%;
+    width: 100%;
+    display: flex;
+  }
+}
